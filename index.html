@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/nicepage.css" media="screen">
     <link rel="stylesheet" href="css/INICIO.css" media="screen">
     <link rel="stylesheet" href="css/main.css" media="screen">
-    <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="js/jquery.js"></script>
+    <script class="u-script" type="text/javascript" src="js/nicepage.js"></script>
     <script class="u-script" type="text/javascript" src="js/main.js"></script>
     <!-- <meta name="generator" content="Nicepage 4.4.0, nicepage.com"> -->
     <link rel="icon" href="images/favicon1.png">
@@ -50,8 +50,9 @@
                 border-width: 2px !important;
                 borders: top right bottom left !important
             }
-        </style><a href="https://nicepage.com/html-website-builder"
-            class="u-align-right u-btn u-button-style u-custom-color-2 u-custom-font u-font-oswald u-hover-palette-1-dark-1 u-text-white u-btn-1 barlowtext" style="font-family: 'Barlow Condensed';">BOOK
+        </style>
+        <a id="bookbtn" href="https://nicepage.com/html-website-builder"
+            class="u-align-right u-btn u-button-style u-custom-color-2 u-custom-font u-font-oswald u-hover-palette-1-dark-1 u-text-white u-btn-1 barlowtext" style="font-family: 'Barlow Condensed'; visibility: hidden;">BOOK
             NOW
         </a><a href="INICIO.html" data-page-id="2637818538" class="u-image u-logo u-image-1" data-image-width="679"
             data-image-height="240" title="Home">
@@ -499,6 +500,17 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
             <path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path>
         </svg>
     </span>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.documentElement.scrollTop > 80) {
+              document.getElementById("bookbtn").style.visibility = "visible";
+            } else {
+              document.getElementById("bookbtn").style.visibility = "hidden";
+            }
+          }
+    </script>
 </body>
 
 </html>
