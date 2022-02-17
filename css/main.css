@@ -6,6 +6,15 @@
     font-family: 'Barlow Condensed'!important;
 }
 
+@font-face {
+  font-family: "Jelytta";
+  src: url('../fonts/Jelytta.ttf');
+}
+
+#fontJelytta {
+  font-family: 'Jelytta';
+}
+
 .sidenav {
     height: 100%;
     width: 0;
