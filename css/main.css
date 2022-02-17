@@ -2,6 +2,18 @@
     cursor: pointer;
 }
 
+#bookbtn {
+  color: blue;
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    /* text-shadow: 10px 20px 30px blue; */
+    color: red;
+  }
+}
+
 .barlowtext {
     font-family: 'Barlow Condensed'!important;
 }
@@ -42,7 +54,8 @@
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #6edaf5;
+    background-color: rgb(121, 118, 114);
   }
   
   .sidenav .closebtn {
